@@ -638,16 +638,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lineRenderer: {fileID: 0}
   drawSpeed: 2
-  lineLength: 10
-  normalColor: {r: 0, g: 1, b: 0, a: 1}
-  lyingColor: {r: 1, g: 0, b: 0, a: 1}
-  truthColor: {r: 0, g: 0, b: 1, a: 1}
-  normalAmplitude: 0.2
-  normalFrequency: 2
-  lyingAmplitude: 0.8
-  lyingFrequency: 5
-  truthAmplitude: 0.5
-  truthFrequency: 3
+  maxPoints: 50
+  startX: 12
+  yPosition: 0
+  minPeakUp: 0.05
+  maxPeakUp: 0.8
+  minPeakDown: 0.05
+  maxPeakDown: 0.8
+  peakSpacing: 0.3
 --- !u!120 &1349006392
 LineRenderer:
   serializedVersion: 2

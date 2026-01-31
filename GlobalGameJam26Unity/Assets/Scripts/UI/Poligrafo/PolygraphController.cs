@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 public class PolygraphController : MonoBehaviour
 {
     [SerializeField] private PolygraphDrawer polygraph;
-
+    /*
     void Update()
     {
         // Usar el nuevo Input System
@@ -46,5 +46,5 @@ public class PolygraphController : MonoBehaviour
                 polygraph.SetState(PolygraphDrawer.PolygraphState.Truth);
                 break;
         }
-    }
+    }*/
 }
