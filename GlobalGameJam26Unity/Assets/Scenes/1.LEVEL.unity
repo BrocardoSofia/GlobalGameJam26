@@ -645,17 +645,25 @@ MonoBehaviour:
   maxPeakUp: 0.8
   minPeakDown: 0.05
   maxPeakDown: 0.8
-  peakSpacing: 0.3
+  peakSpacing: 0.35
   minPeakUpNormal: 0.05
   maxPeakUpNormal: 0.8
   minPeakDownNormal: 0.05
   maxPeakDownNormal: 0.8
-  peakSpacingNormal: 0.3
-  minPeakUpLie: 0.05
-  maxPeakUpLie: 2
+  peakSpacingNormal: 0.35
+  drawSpeedNormal: 2
+  minPeakUpLie: 0.5
+  maxPeakUpLie: 3.5
   minPeakDownLie: 0.05
-  maxPeakDownLie: 2
-  peakSpacingLie: 0.2
+  maxPeakDownLie: 0.8
+  peakSpacingLie: 0.15
+  drawSpeedLie: 4
+  minPeakUpTruth: 0.05
+  maxPeakUpTruth: 0.8
+  minPeakDownTruth: 0.5
+  maxPeakDownTruth: 3.5
+  peakSpacingTruth: 0.5
+  drawSpeedTruth: 1
 --- !u!120 &1349006392
 LineRenderer:
   serializedVersion: 2

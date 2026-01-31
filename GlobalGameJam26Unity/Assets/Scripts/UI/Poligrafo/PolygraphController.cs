@@ -18,15 +18,12 @@ public class PolygraphController : MonoBehaviour
             {
                 Debug.Log("Mintiendo");
                 polygraph.StartLying();
-            }/*
+            }
             else if (Keyboard.current.digit3Key.wasPressedThisFrame)
             {
-                polygraph.SetState(PolygraphDrawer.PolygraphState.Truth);
+                Debug.Log("Verdad");
+                polygraph.StartTruth();
             }
-            else if (Keyboard.current.rKey.wasPressedThisFrame)
-            {
-                polygraph.ResetGraph();
-            }*/
         }
     }
 
@@ -35,16 +32,19 @@ public class PolygraphController : MonoBehaviour
         switch (state.ToLower())
         {
             case "normal":
+                Debug.Log("Normal");
                 polygraph.StartNormal();
                 break;
             case "lying":
             case "mintio":
+                Debug.Log("Mintiendo");
                 polygraph.StartLying();
-                break;/*
+                break;
             case "truth":
             case "verdad":
-                polygraph.SetState(PolygraphDrawer.PolygraphState.Truth);
-                break;*/
+                Debug.Log("Verdad");
+                polygraph.StartTruth();
+                break;
         }
     }
 }

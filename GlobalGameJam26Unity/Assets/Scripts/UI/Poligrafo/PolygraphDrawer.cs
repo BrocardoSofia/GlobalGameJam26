@@ -7,8 +7,8 @@ public class PolygraphDrawer : MonoBehaviour
 {
     [Header("Configuración")]
     [SerializeField] private LineRenderer lineRenderer;
-    [SerializeField] private float drawSpeed = 30f; // Puntos por segundo
-    [SerializeField] private int maxPoints = 100; // Máximo de puntos antes de desaparecer
+    [SerializeField] private float drawSpeed = 2f; // Puntos por segundo
+    [SerializeField] private int maxPoints = 50; // Máximo de puntos antes de desaparecer
 
     [Header("Posición Inicial")]
     [SerializeField] private float startX = 5f; // Donde empieza la línea (derecha) - FIJO
@@ -27,13 +27,23 @@ public class PolygraphDrawer : MonoBehaviour
     [SerializeField] private float minPeakDownNormal = 0.05f;
     [SerializeField] private float maxPeakDownNormal = 0.8f;
     [SerializeField] private float peakSpacingNormal = 0.3f;
+    [SerializeField] private float drawSpeedNormal = 2f;
 
     [Header("Picos Aleatorios pulso Mentira")]
-    [SerializeField] private float minPeakUpLie = 0.3f;
-    [SerializeField] private float maxPeakUpLie = 1f;
-    [SerializeField] private float minPeakDownLie = 0.3f;
-    [SerializeField] private float maxPeakDownLie = 1f;
+    [SerializeField] private float minPeakUpLie = 0.5f;
+    [SerializeField] private float maxPeakUpLie = 3.5f;
+    [SerializeField] private float minPeakDownLie = 0.05f;
+    [SerializeField] private float maxPeakDownLie = 0.8f;
     [SerializeField] private float peakSpacingLie = 0.15f;
+    [SerializeField] private float drawSpeedLie = 4f;
+
+    [Header("Picos Aleatorios pulso Verdad")]
+    [SerializeField] private float minPeakUpTruth = 0.05f;
+    [SerializeField] private float maxPeakUpTruth = 0.8f;
+    [SerializeField] private float minPeakDownTruth = 0.5f;
+    [SerializeField] private float maxPeakDownTruth = 3.5f;
+    [SerializeField] private float peakSpacingTruth = 0.5f;
+    [SerializeField] private float drawSpeedTruth = 1f;
 
     private List<Vector3> points = new List<Vector3>();
     private float timeSinceLastPoint = 0f;
@@ -114,6 +124,7 @@ public class PolygraphDrawer : MonoBehaviour
         minPeakDown = minPeakDownLie;
         maxPeakDown = maxPeakDownLie;
         peakSpacing = peakSpacingLie;
+        drawSpeed = drawSpeedLie;
     }
 
     public void StartNormal()
@@ -124,5 +135,17 @@ public class PolygraphDrawer : MonoBehaviour
         minPeakDown = minPeakDownNormal;
         maxPeakDown = maxPeakDownNormal;
         peakSpacing = peakSpacingNormal;
+        drawSpeed = drawSpeedNormal;
+    }
+
+    public void StartTruth()
+    {
+        Debug.Log("-");
+        minPeakUp = minPeakUpTruth;
+        maxPeakUp = maxPeakUpTruth;
+        minPeakDown = minPeakDownTruth;
+        maxPeakDown = maxPeakDownTruth;
+        peakSpacing = peakSpacingTruth;
+        drawSpeed = drawSpeedTruth;
     }
 }
