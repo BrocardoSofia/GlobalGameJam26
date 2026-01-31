@@ -64,6 +64,8 @@ public class PolygraphDrawer : MonoBehaviour
         // Estos parámetros ayudan a que la línea se vea más gruesa y suave
         lineRenderer.numCornerVertices = 2;
         lineRenderer.numCapVertices = 2;
+        lineRenderer.sortingLayerName = "UI";
+        lineRenderer.sortingOrder = 100;
     }
 
     void Update()
