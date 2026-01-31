@@ -23,6 +23,7 @@ public class LectorPreguntas : MonoBehaviour
 {
     private PreguntasData preguntasData;
     public TextAsset archivoJSON;
+    public LogicaPreguntas logicaPreguntas;
 
     void Start()
     {
@@ -36,6 +37,7 @@ public class LectorPreguntas : MonoBehaviour
         {
             preguntasData = JsonUtility.FromJson<PreguntasData>(jsonFile.text);
             Debug.Log($"Se cargaron {preguntasData.preguntas.Count} preguntas");
+            logicaPreguntas.Iniciar();
         }
         else
         {
