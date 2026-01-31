@@ -636,16 +636,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2f42ecaf2906ca4cbd3dbef87e65895, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lineRenderer: {fileID: 0}
+  lineRenderer: {fileID: 1349006392}
   drawSpeed: 2
   maxPoints: 50
-  startX: 12
+  startX: 11
   yPosition: 0
   minPeakUp: 0.05
   maxPeakUp: 0.8
   minPeakDown: 0.05
   maxPeakDown: 0.8
   peakSpacing: 0.3
+  minPeakUpNormal: 0.05
+  maxPeakUpNormal: 0.8
+  minPeakDownNormal: 0.05
+  maxPeakDownNormal: 0.8
+  peakSpacingNormal: 0.3
+  minPeakUpLie: 0.05
+  maxPeakUpLie: 2
+  minPeakDownLie: 0.05
+  maxPeakDownLie: 2
+  peakSpacingLie: 0.2
 --- !u!120 &1349006392
 LineRenderer:
   serializedVersion: 2

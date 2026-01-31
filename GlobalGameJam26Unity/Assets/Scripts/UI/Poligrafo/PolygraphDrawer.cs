@@ -1,5 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System;
+using Random = UnityEngine.Random;
 
 public class PolygraphDrawer : MonoBehaviour
 {
@@ -12,16 +14,30 @@ public class PolygraphDrawer : MonoBehaviour
     [SerializeField] private float startX = 5f; // Donde empieza la línea (derecha) - FIJO
     [SerializeField] private float yPosition = 0f; // Altura de la línea base
 
-    [Header("Picos Aleatorios")]
-    [SerializeField] private float minPeakUp = 0.3f; // Mínimo pico hacia arriba
-    [SerializeField] private float maxPeakUp = 1f; // Máximo pico hacia arriba
-    [SerializeField] private float minPeakDown = 0.3f; // Mínimo pico hacia abajo
-    [SerializeField] private float maxPeakDown = 1f; // Máximo pico hacia abajo
-    [SerializeField] private float peakSpacing = 0.2f; // Distancia entre picos (controla velocidad)
+    [Header("Picos Aleatorios pulso Base")]
+    [SerializeField] private float minPeakUp = 0.05f; // Mínimo pico hacia arriba
+    [SerializeField] private float maxPeakUp = 0.8f; // Máximo pico hacia arriba
+    [SerializeField] private float minPeakDown = 0.05f; // Mínimo pico hacia abajo
+    [SerializeField] private float maxPeakDown = 0.8f; // Máximo pico hacia abajo
+    [SerializeField] private float peakSpacing = 0.3f; // Distancia entre picos (controla velocidad)
+
+    [Header("Picos Aleatorios pulso Normal")]
+    [SerializeField] private float minPeakUpNormal = 0.05f;
+    [SerializeField] private float maxPeakUpNormal = 0.8f;
+    [SerializeField] private float minPeakDownNormal = 0.05f;
+    [SerializeField] private float maxPeakDownNormal = 0.8f;
+    [SerializeField] private float peakSpacingNormal = 0.3f;
+
+    [Header("Picos Aleatorios pulso Mentira")]
+    [SerializeField] private float minPeakUpLie = 0.3f;
+    [SerializeField] private float maxPeakUpLie = 1f;
+    [SerializeField] private float minPeakDownLie = 0.3f;
+    [SerializeField] private float maxPeakDownLie = 1f;
+    [SerializeField] private float peakSpacingLie = 0.15f;
 
     private List<Vector3> points = new List<Vector3>();
     private float timeSinceLastPoint = 0f;
-    private bool nextPeakUp = true; // Alterna entre arriba y abajo
+    private bool nextPeakUp = true;
 
     void Start()
     {
@@ -29,11 +45,15 @@ public class PolygraphDrawer : MonoBehaviour
             lineRenderer = GetComponent<LineRenderer>();
 
         lineRenderer.positionCount = 0;
-        lineRenderer.startWidth = 0.1f;
-        lineRenderer.endWidth = 0.1f;
+        lineRenderer.startWidth = 0.1f; // Aumentado de 0.1f
+        lineRenderer.endWidth = 0.1f;   // Aumentado de 0.1f
         lineRenderer.startColor = Color.green;
         lineRenderer.endColor = Color.green;
         lineRenderer.useWorldSpace = true;
+
+        // Estos parámetros ayudan a que la línea se vea más gruesa y suave
+        lineRenderer.numCornerVertices = 2;
+        lineRenderer.numCapVertices = 2;
     }
 
     void Update()
@@ -84,5 +104,25 @@ public class PolygraphDrawer : MonoBehaviour
         // Actualizar el LineRenderer
         lineRenderer.positionCount = points.Count;
         lineRenderer.SetPositions(points.ToArray());
+    }
+
+    public void StartLying()
+    {
+        Debug.Log("-");
+        minPeakUp = minPeakUpLie;
+        maxPeakUp = maxPeakUpLie;
+        minPeakDown = minPeakDownLie;
+        maxPeakDown = maxPeakDownLie;
+        peakSpacing = peakSpacingLie;
+    }
+
+    public void StartNormal()
+    {
+        Debug.Log("-");
+        minPeakUp = minPeakUpNormal;
+        maxPeakUp = maxPeakUpNormal;
+        minPeakDown = minPeakDownNormal;
+        maxPeakDown = maxPeakDownNormal;
+        peakSpacing = peakSpacingNormal;
     }
 }
