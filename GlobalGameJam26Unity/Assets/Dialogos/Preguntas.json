@@ -1,0 +1,202 @@
+{
+  "preguntas": [
+    {
+      "ronda": 1,
+      "pregunta": "¿Mantuvo relaciones carnales con el señor Benson?",
+      "respuesta": "Si",
+      "detector": "Verdad"
+    },
+    {
+      "ronda": 1,
+      "pregunta": "¿Fue usted?",
+      "respuesta": "No",
+      "detector": "Inconcluso"
+    },
+    {
+      "ronda": 1,
+      "pregunta": "¿Oculto información del caso a la policía?",
+      "respuesta": "No",
+      "detector": "Mentira"
+    },
+    {
+      "ronda": 2,
+      "pregunta": "¿Tenía conocimiento de que el señor Benson estaba casado?",
+      "respuesta": "Si",
+      "detector": "Verdad"
+    },
+    {
+      "ronda": 2,
+      "pregunta": "¿Traicionó a alguien?",
+      "respuesta": "No",
+      "detector": "Inconcluso"
+    },
+    {
+      "ronda": 2,
+      "pregunta": "¿Recibió regalos del señor Benson?",
+      "respuesta": "Si",
+      "detector": "Verdad"
+    },
+    {
+      "ronda": 3,
+      "pregunta": "¿El señor Benson le regaló su departamento en Pinamar?",
+      "respuesta": "Si",
+      "detector": "Verdad"
+    },
+    {
+      "ronda": 3,
+      "pregunta": "¿Estaba enamorada del señor Benson?",
+      "respuesta": "No",
+      "detector": "Verdad"
+    },
+    {
+      "ronda": 3,
+      "pregunta": "¿Mentiría para salvarse?",
+      "respuesta": "No",
+      "detector": "Mentira"
+    },
+    {
+      "ronda": 3,
+      "pregunta": "¿Su marido sabe de la relación que mantenía con el señor Benson?",
+      "respuesta": "No",
+      "detector": "Verdad"
+    },
+    {
+      "ronda": 4,
+      "pregunta": "¿Se considera una persona violenta?",
+      "respuesta": "No",
+      "detector": "Mentira"
+    },
+    {
+      "ronda": 4,
+      "pregunta": "¿Era consciente que el señor Benson tomaba pastillas para dormir?",
+      "respuesta": "No",
+      "detector": "Mentira"
+    },
+    {
+      "ronda": 4,
+      "pregunta": "¿Sabía que el señor Benson tenía deudas?",
+      "respuesta": "No",
+      "detector": "Mentira"
+    },
+    {
+      "ronda": 4,
+      "pregunta": "¿Usted cree que el vestido era azul?",
+      "respuesta": "Si",
+      "detector": "Verdad"
+    },
+    {
+      "ronda": 5,
+      "pregunta": "¿Conoce usted a la señora Benson?",
+      "respuesta": "Si",
+      "detector": "Verdad"
+    },
+    {
+      "ronda": 5,
+      "pregunta": "¿Quería que el señor Benson se divorciara para casarse con usted?",
+      "respuesta": "No",
+      "detector": "Mentira"
+    },
+    {
+      "ronda": 5,
+      "pregunta": "¿Se arrepiente de haber golpeado al señor Acosta?",
+      "respuesta": "Si",
+      "detector": "Mentira"
+    },
+    {
+      "ronda": 6,
+      "pregunta": "¿Usted bailó con el borracho?",
+      "respuesta": "Si",
+      "detector": "Inconcluso"
+    },
+    {
+      "ronda": 6,
+      "pregunta": "¿Estuvo con el Señor Benson la noche del 6 de Noviembre del año corriente?",
+      "respuesta": "No",
+      "detector": "Mentira"
+    },
+    {
+      "ronda": 6,
+      "pregunta": "¿Son naturales?",
+      "respuesta": "Si",
+      "detector": "Mentira"
+    },
+    {
+      "ronda": 6,
+      "pregunta": "¿Tiene en su posesión personal un revólver Carbine 30?",
+      "respuesta": "Si",
+      "detector": "Verdad"
+    },
+    {
+      "ronda": 7,
+      "pregunta": "¿El día 6 de Noviembre del año corriente compró absenta para el señor Benson?",
+      "respuesta": "No",
+      "detector": "Mentira"
+    },
+    {
+      "ronda": 7,
+      "pregunta": "¿Usted consume alcohol?",
+      "respuesta": "Si",
+      "detector": "Verdad"
+    },
+    {
+      "ronda": 7,
+      "pregunta": "¿Usted ha consumido absenta?",
+      "respuesta": "No",
+      "detector": "Inconcluso"
+    },
+    {
+      "ronda": 7,
+      "pregunta": "¿Maneja un vehículo con patente C893064?",
+      "respuesta": "No",
+      "detector": "Verdad"
+    },
+    {
+      "ronda": 8,
+      "pregunta": "¿El señor Benson consumió la absenta que compró el día 6 de Noviembre del año corriente?",
+      "respuesta": "No",
+      "detector": "Verdad"
+    },
+    {
+      "ronda": 8,
+      "pregunta": "¿A usted le gusta la comida Italiana?",
+      "respuesta": "Si",
+      "detector": "Verdad"
+    },
+    {
+      "ronda": 8,
+      "pregunta": "¿Ha discutido usted con el señor Benson?",
+      "respuesta": "No",
+      "detector": "Mentira"
+    },
+    {
+      "ronda": 8,
+      "pregunta": "¿La noche del 6 de noviembre del año corriente comió sushi?",
+      "respuesta": "No",
+      "detector": "Verdad"
+    },
+    {
+      "ronda": 9,
+      "pregunta": "¿La noche del 6 de noviembre sabía que el señor Benson consumió absenta con pastillas?",
+      "respuesta": "No",
+      "detector": "Verdad"
+    },
+    {
+      "ronda": 9,
+      "pregunta": "¿Está libre esta noche?",
+      "respuesta": "No",
+      "detector": "Mentira"
+    },
+    {
+      "ronda": 9,
+      "pregunta": "¿Usted vio al señor Benson sin vida la noche del 6 de Noviembre del año corriente?",
+      "respuesta": "No",
+      "detector": "Mentira"
+    },
+    {
+      "ronda": 9,
+      "pregunta": "¿Usted bebió la noche del 6 de Noviembre del año corriente?",
+      "respuesta": "Si",
+      "detector": "Inconcluso"
+    }
+  ]
+}
