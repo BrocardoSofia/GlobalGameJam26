@@ -12441,12 +12441,14 @@ MonoBehaviour:
   botonDerecho: {fileID: 44341547}
   fotoPlace: {fileID: 217620927}
   imagenes:
-  - {fileID: 21300000, guid: 640ab95740253074ca17c2e93128826c, type: 3}
-  - {fileID: 21300000, guid: eba077756b3166444b569ae9c02d3100, type: 3}
-  - {fileID: 21300000, guid: 5d7795d4dbd074e408d30965ae2a04da, type: 3}
+  - {fileID: 21300000, guid: 039e19e0ab9dae34eab13d23646669d8, type: 3}
+  - {fileID: 21300000, guid: 2c2307fe24efee54b96afc3c39282aec, type: 3}
+  - {fileID: 21300000, guid: b9218a0d4d1a1a54c8a8d9e8a3c58cea, type: 3}
+  - {fileID: 21300000, guid: a703c582b1bb8f1488338685a554e2fe, type: 3}
   - {fileID: 21300000, guid: 6b45b5053e95ff941beb132c1292186c, type: 3}
   - {fileID: 21300000, guid: 7500bc9a41fcef34fa9569c4020b37a3, type: 3}
-  - {fileID: 21300000, guid: be751a36987c491478021b7c3e574237, type: 3}
+  - {fileID: 21300000, guid: 062673c3616ca214a9e9ec37d19fc2d8, type: 3}
+  - {fileID: 21300000, guid: d928aab715b812c49b051096622512d5, type: 3}
   canvasInfoPoligrafo: {fileID: 975186321}
 --- !u!4 &1159706204
 Transform:
