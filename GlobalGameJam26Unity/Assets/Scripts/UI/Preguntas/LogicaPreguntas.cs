@@ -76,10 +76,12 @@ public class LogicaPreguntas : MonoBehaviour
 
     IEnumerator EjecutarPoligrafo(string detector, TMP_Dropdown dopdownPregunta)
     {
+        bool continueCicle = true;
+        Debug.Log("1-----");
         dopdownPregunta.interactable = false;
         polygraphController.SetPolygraphState(detector);
 
-        while (true)
+        while (continueCicle)
         {
             while (pausado)
             {
@@ -88,7 +90,10 @@ public class LogicaPreguntas : MonoBehaviour
             
             yield return new WaitForSeconds(4f);
             dopdownPregunta.interactable = true;
+            Debug.Log("2-----");
             polygraphController.SetPolygraphState("Inconcluso");
+
+            continueCicle = false;
         }
         
     }

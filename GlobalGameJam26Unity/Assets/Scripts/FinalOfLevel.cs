@@ -10,7 +10,8 @@ public class FinalOfLevel : MonoBehaviour
     public string[] culpableTxts;
     public string[] inocenteTxts;
     public TextMeshProUGUI textoCanvas;
-    [SerializeField] private float duracionTransicion = 0.5f;
+    [SerializeField] private float duracionTransicion = 1f;
+    public PolygraphDrawer polygraphDrawer;
 
     public void IniciarFinal(string estado)
     {
@@ -19,17 +20,22 @@ public class FinalOfLevel : MonoBehaviour
         textoCanvas.color = color;
 
         canvasFinal.SetActive(true);
+        polygraphDrawer.StopDrawing();
         foreach (var canvas in canvasCerrar)
         {
             canvas.SetActive(false);
         }
 
+        Debug.Log("oculto canvas");
+
         if(estado == "culpable")
         {
+            Debug.Log("Entro a culpable");
             StartCoroutine(AnimarTextos(culpableTxts));
         }
         else
         {
+            Debug.Log("Entro a inocente");
             StartCoroutine(AnimarTextos(inocenteTxts));
         }
     }
@@ -44,7 +50,7 @@ public class FinalOfLevel : MonoBehaviour
 
             yield return StartCoroutine(CambiarAlpha(0f, 1f, duracionTransicion));
 
-            yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(4f);
 
             yield return StartCoroutine(CambiarAlpha(1f, 0f, duracionTransicion));
         }

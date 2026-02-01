@@ -6232,7 +6232,8 @@ MonoBehaviour:
   - "Ese d\xEDa aprend\xED que algunas personas no buscan justicia\u2026 solo buscan
     testigos."
   textoCanvas: {fileID: 1196556094}
-  duracionTransicion: 0.5
+  duracionTransicion: 1
+  polygraphDrawer: {fileID: 1349006391}
 --- !u!1 &697679441
 GameObject:
   m_ObjectHideFlags: 0
@@ -6971,7 +6972,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &793001562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10021,8 +10022,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 16777215
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
