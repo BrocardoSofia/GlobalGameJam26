@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -5,11 +6,14 @@ using UnityEngine.UI;
 
 public class LogicaPreguntas : MonoBehaviour
 {
+    public PolygraphController polygraphController;
     public LectorPreguntas lectorPreguntas;
     public Button pregunta1;
     public Button pregunta2;
     public Button pregunta3;
     public Button pregunta4;
+
+    public GameObject[] historial;
 
     private int ronda = 1;
     private List<Pregunta> preguntasdeRonda;
@@ -45,12 +49,46 @@ public class LogicaPreguntas : MonoBehaviour
     {
         Debug.Log(indice);
         DisableButtons();
-        //se actualiza historial
-        //cambiar detector por 3 segundos en lo que sea
-        //volver a pulso normal
+        TextMeshProUGUI[] todosLosTextos = historial[ronda - 1].GetComponentsInChildren<TextMeshProUGUI>();
+        string detector = "Inconcluso";
+        Dropdown dopdownPregunta = historial[ronda - 1].GetComponent<Dropdown>();
+        if(dopdownPregunta != null)
+        {
+            Debug.Log("dropdown existe");
+        }
+        else
+        {
+            Debug.Log("dropdown null");
+        }
+
+        foreach (TextMeshProUGUI texto in todosLosTextos)
+        {
+            if (texto.gameObject.CompareTag("Pregunta"))
+            {
+                texto.text = preguntasdeRonda[indice].pregunta;
+            }
+            else if (texto.gameObject.CompareTag("Respuesta"))
+            {
+                texto.text = preguntasdeRonda[indice].respuesta;
+            }
+        }
+
+        detector = preguntasdeRonda[indice].detector;
+        Debug.Log(detector);
+        historial[ronda - 1].SetActive(true);
+
+        StartCoroutine(EjecutarPoligrafo(detector, dopdownPregunta));
     }
 
-    //se llama despues de cambiar una vez el desplegable
+    IEnumerator EjecutarPoligrafo(string detector, Dropdown dopdownPregunta)
+    {
+        dopdownPregunta.interactable = false;
+        polygraphController.SetPolygraphState(detector);
+        yield return new WaitForSeconds(4f);
+        dopdownPregunta.interactable = true;
+        polygraphController.SetPolygraphState("Inconcluso");
+    }
+
     public void NuevasPreguntas()
     {
         if(ronda != 9)

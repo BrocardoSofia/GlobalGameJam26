@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 public class PolygraphController : MonoBehaviour
 {
     [SerializeField] private PolygraphDrawer polygraph;
-
+    /*
     void Update()
     {
         if (Keyboard.current != null)
@@ -25,18 +25,18 @@ public class PolygraphController : MonoBehaviour
                 polygraph.StartTruth();
             }
         }
-    }
+    }*/
 
     public void SetPolygraphState(string state)
     {
         switch (state.ToLower())
         {
-            case "normal":
-                Debug.Log("Normal");
+            case "inconcluso":
+                Debug.Log("Inconcluso");
                 polygraph.StartNormal();
                 break;
             case "lying":
-            case "mintio":
+            case "mentira":
                 Debug.Log("Mintiendo");
                 polygraph.StartLying();
                 break;
