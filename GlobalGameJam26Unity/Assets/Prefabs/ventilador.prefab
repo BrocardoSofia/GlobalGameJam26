@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &7248203950967979239
+--- !u!1001 &2879115673347265050
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -55,5 +55,29 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 83693eed5992a6e438ca068c396c739e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2567829566726947080}
   m_SourcePrefab: {fileID: 100100000, guid: 83693eed5992a6e438ca068c396c739e, type: 3}
+--- !u!1 &3113612019204534091 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 83693eed5992a6e438ca068c396c739e, type: 3}
+  m_PrefabInstance: {fileID: 2879115673347265050}
+  m_PrefabAsset: {fileID: 0}
+--- !u!111 &2567829566726947080
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3113612019204534091}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
