@@ -50,6 +50,8 @@ public class PolygraphDrawer : MonoBehaviour
     private bool nextPeakUp = true;
     private bool continueDrawing = true;
 
+    public ButtonsCarpeta botonesCarpetas;
+
     void Start()
     {
         if (lineRenderer == null)
@@ -67,6 +69,8 @@ public class PolygraphDrawer : MonoBehaviour
         lineRenderer.numCapVertices = 2;
         lineRenderer.sortingLayerName = "UI";
         lineRenderer.sortingOrder = 100;
+
+        botonesCarpetas.AbrirInfoPoligrafo();
     }
 
     void Update()
