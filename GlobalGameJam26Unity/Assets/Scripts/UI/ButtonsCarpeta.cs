@@ -13,6 +13,22 @@ public class ButtonsCarpeta : MonoBehaviour
     public Sprite[] imagenes;
     private int indice = 0;
 
+    public GameObject canvasInfoPoligrafo;
+
+    public void AbrirInfoPoligrafo()
+    {
+        polygraphController.SetPolygraphState("stop");
+        canvasInfoPoligrafo.SetActive(true);
+        logicaPreguntas.Pausar();
+    }
+
+    public void CerrarInfoPoligrafo()
+    {
+        polygraphController.SetPolygraphState("start");
+        canvasInfoPoligrafo.SetActive(false);
+        logicaPreguntas.Reanudar();
+    }
+
     public void AbrirCarpeta()
     {
         polygraphController.SetPolygraphState("stop");
