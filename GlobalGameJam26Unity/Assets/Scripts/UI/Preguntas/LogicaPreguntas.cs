@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -5,14 +6,19 @@ using UnityEngine.UI;
 
 public class LogicaPreguntas : MonoBehaviour
 {
+    public PolygraphController polygraphController;
     public LectorPreguntas lectorPreguntas;
     public Button pregunta1;
     public Button pregunta2;
     public Button pregunta3;
     public Button pregunta4;
 
-    private int ronda = 0;
+    public GameObject canvasFinal;
+    public GameObject[] historial;
+
+    private int ronda = 1;
     private List<Pregunta> preguntasdeRonda;
+    private bool pausado = false;
 
     public void Iniciar()
     {
@@ -45,6 +51,72 @@ public class LogicaPreguntas : MonoBehaviour
     {
         Debug.Log(indice);
         DisableButtons();
+        TextMeshProUGUI[] todosLosTextos = historial[ronda - 1].GetComponentsInChildren<TextMeshProUGUI>();
+        string detector = "Inconcluso";
+        TMP_Dropdown dopdownPregunta = historial[ronda - 1].GetComponentInChildren<TMP_Dropdown>();
+
+        foreach (TextMeshProUGUI texto in todosLosTextos)
+        {
+            if (texto.gameObject.CompareTag("Pregunta"))
+            {
+                texto.text = preguntasdeRonda[indice].pregunta;
+            }
+            else if (texto.gameObject.CompareTag("Respuesta"))
+            {
+                texto.text = preguntasdeRonda[indice].respuesta;
+            }
+        }
+
+        detector = preguntasdeRonda[indice].detector;
+        Debug.Log(detector);
+        historial[ronda - 1].SetActive(true);
+
+        StartCoroutine(EjecutarPoligrafo(detector, dopdownPregunta));
+    }
+
+    IEnumerator EjecutarPoligrafo(string detector, TMP_Dropdown dopdownPregunta)
+    {
+        dopdownPregunta.interactable = false;
+        polygraphController.SetPolygraphState(detector);
+
+        while (true)
+        {
+            while (pausado)
+            {
+                yield return null;
+            }
+            
+            yield return new WaitForSeconds(4f);
+            dopdownPregunta.interactable = true;
+            polygraphController.SetPolygraphState("Inconcluso");
+        }
+        
+    }
+
+    public void Pausar()
+    {
+        Time.timeScale = 0f;
+    }
+
+    public void Reanudar()
+    {
+        Time.timeScale = 1f;
+    }
+
+    public void NuevasPreguntas()
+    {
+        if(ronda != 8)
+        {
+            ronda++;
+            preguntasdeRonda = lectorPreguntas.ObtenerPreguntasPorRonda(ronda);
+            UpdateButtons();
+        }
+        else
+        {
+            polygraphController.SetPolygraphState("stop");
+            canvasFinal.SetActive(true);
+        }
+        
     }
 
     private void DisableButtons()
