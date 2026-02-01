@@ -110,7 +110,7 @@ public class LogicaPreguntas : MonoBehaviour
 
     public void NuevasPreguntas()
     {
-        if(ronda != 8)
+        if(ronda != 9)
         {
             ronda++;
             preguntasdeRonda = lectorPreguntas.ObtenerPreguntasPorRonda(ronda);
