@@ -976,15 +976,19 @@ PrefabInstance:
     - target: {fileID: 2567829566726947080, guid: 4c580d7cc21afe34499a1aac2ddf031f, type: 3}
       propertyPath: m_Animation
       value: 
-      objectReference: {fileID: 7400000, guid: 494e99b3b3e6be74394048890b0f2267, type: 2}
+      objectReference: {fileID: 7400000, guid: 54b5cead1e09c514f8440e4ebb0467ef, type: 2}
     - target: {fileID: 2567829566726947080, guid: 4c580d7cc21afe34499a1aac2ddf031f, type: 3}
       propertyPath: m_Animations.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2567829566726947080, guid: 4c580d7cc21afe34499a1aac2ddf031f, type: 3}
       propertyPath: 'm_Animations.Array.data[0]'
       value: 
       objectReference: {fileID: 7400000, guid: 494e99b3b3e6be74394048890b0f2267, type: 2}
+    - target: {fileID: 2567829566726947080, guid: 4c580d7cc21afe34499a1aac2ddf031f, type: 3}
+      propertyPath: 'm_Animations.Array.data[1]'
+      value: 
+      objectReference: {fileID: 7400000, guid: 54b5cead1e09c514f8440e4ebb0467ef, type: 2}
     - target: {fileID: 3113612019204534091, guid: 4c580d7cc21afe34499a1aac2ddf031f, type: 3}
       propertyPath: m_Name
       value: ventilador
