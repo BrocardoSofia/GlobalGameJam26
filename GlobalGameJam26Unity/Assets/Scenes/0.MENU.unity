@@ -942,6 +942,7 @@ GameObject:
   - component: {fileID: 594028815}
   - component: {fileID: 594028814}
   - component: {fileID: 594028813}
+  - component: {fileID: 594028816}
   m_Layer: 5
   m_Name: Creditos
   m_TagString: Untagged
@@ -1063,6 +1064,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 594028811}
   m_CullTransparentMesh: 1
+--- !u!114 &594028816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 594028811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99a4c78c5c2007b42ad5a7933027e864, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sonidoHover: {fileID: 8300000, guid: 2059eb296cb2b4048a0bc8206359c83a, type: 3}
+  sonidoClick: {fileID: 8300000, guid: 01fe94b7c75ccbf45b5aab57273412af, type: 3}
+  volumen: 1
 --- !u!1 &666043735
 GameObject:
   m_ObjectHideFlags: 0
@@ -1247,6 +1263,7 @@ GameObject:
   - component: {fileID: 1155321104}
   - component: {fileID: 1155321103}
   - component: {fileID: 1155321102}
+  - component: {fileID: 1155321105}
   m_Layer: 5
   m_Name: Iniciar
   m_TagString: Untagged
@@ -1368,6 +1385,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1155321100}
   m_CullTransparentMesh: 1
+--- !u!114 &1155321105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155321100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99a4c78c5c2007b42ad5a7933027e864, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sonidoHover: {fileID: 8300000, guid: 2059eb296cb2b4048a0bc8206359c83a, type: 3}
+  sonidoClick: {fileID: 8300000, guid: 01fe94b7c75ccbf45b5aab57273412af, type: 3}
+  volumen: 1
 --- !u!1 &1196141795
 GameObject:
   m_ObjectHideFlags: 0
@@ -1697,6 +1729,7 @@ GameObject:
   - component: {fileID: 2125229065}
   - component: {fileID: 2125229064}
   - component: {fileID: 2125229063}
+  - component: {fileID: 2125229066}
   m_Layer: 5
   m_Name: Salir
   m_TagString: Untagged
@@ -1818,6 +1851,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2125229061}
   m_CullTransparentMesh: 1
+--- !u!114 &2125229066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125229061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99a4c78c5c2007b42ad5a7933027e864, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sonidoHover: {fileID: 8300000, guid: 2059eb296cb2b4048a0bc8206359c83a, type: 3}
+  sonidoClick: {fileID: 8300000, guid: 01fe94b7c75ccbf45b5aab57273412af, type: 3}
+  volumen: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
