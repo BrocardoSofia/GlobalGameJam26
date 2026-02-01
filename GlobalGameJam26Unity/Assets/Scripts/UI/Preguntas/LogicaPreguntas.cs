@@ -51,15 +51,7 @@ public class LogicaPreguntas : MonoBehaviour
         DisableButtons();
         TextMeshProUGUI[] todosLosTextos = historial[ronda - 1].GetComponentsInChildren<TextMeshProUGUI>();
         string detector = "Inconcluso";
-        Dropdown dopdownPregunta = historial[ronda - 1].GetComponent<Dropdown>();
-        if(dopdownPregunta != null)
-        {
-            Debug.Log("dropdown existe");
-        }
-        else
-        {
-            Debug.Log("dropdown null");
-        }
+        TMP_Dropdown dopdownPregunta = historial[ronda - 1].GetComponentInChildren<TMP_Dropdown>();
 
         foreach (TextMeshProUGUI texto in todosLosTextos)
         {
@@ -80,7 +72,7 @@ public class LogicaPreguntas : MonoBehaviour
         StartCoroutine(EjecutarPoligrafo(detector, dopdownPregunta));
     }
 
-    IEnumerator EjecutarPoligrafo(string detector, Dropdown dopdownPregunta)
+    IEnumerator EjecutarPoligrafo(string detector, TMP_Dropdown dopdownPregunta)
     {
         dopdownPregunta.interactable = false;
         polygraphController.SetPolygraphState(detector);

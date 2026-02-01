@@ -325,21 +325,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e5c7b292570fff4c8a47d94f03890e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  logicaPreguntas: {fileID: 2040694904}
-  dropdown: {fileID: 42536983}
-  placeholderText: Seleccionar...
-  placeholderColor:
-    r: 0.5
-    g: 0.5
-    b: 0.5
-    a: 1
-  normalColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  hasSelectedOnce: 0
-  placeholderIndex: 0
 --- !u!114 &42536983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2915,21 +2900,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e5c7b292570fff4c8a47d94f03890e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  logicaPreguntas: {fileID: 2040694904}
-  dropdown: {fileID: 368875392}
-  placeholderText: Seleccionar...
-  placeholderColor:
-    r: 0.5
-    g: 0.5
-    b: 0.5
-    a: 1
-  normalColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  hasSelectedOnce: 0
-  placeholderIndex: 0
 --- !u!114 &368875392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9571,8 +9541,8 @@ MonoBehaviour:
   drawSpeedLie: 4
   minPeakUpTruth: 0.05
   maxPeakUpTruth: 0.8
-  minPeakDownTruth: 1
-  maxPeakDownTruth: 3.2
+  minPeakDownTruth: 2
+  maxPeakDownTruth: 3.4
   peakSpacingTruth: 0.5
   drawSpeedTruth: 1
 --- !u!120 &1349006392
@@ -10658,21 +10628,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e5c7b292570fff4c8a47d94f03890e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  logicaPreguntas: {fileID: 2040694904}
-  dropdown: {fileID: 1422879442}
-  placeholderText: Seleccionar...
-  placeholderColor:
-    r: 0.5
-    g: 0.5
-    b: 0.5
-    a: 1
-  normalColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  hasSelectedOnce: 0
-  placeholderIndex: 0
 --- !u!1 &1427901062
 GameObject:
   m_ObjectHideFlags: 0
@@ -11089,21 +11044,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e5c7b292570fff4c8a47d94f03890e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  logicaPreguntas: {fileID: 2040694904}
-  dropdown: {fileID: 1475906809}
-  placeholderText: Seleccionar...
-  placeholderColor:
-    r: 0.5
-    g: 0.5
-    b: 0.5
-    a: 1
-  normalColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  hasSelectedOnce: 0
-  placeholderIndex: 0
 --- !u!114 &1475906809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12850,21 +12790,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e5c7b292570fff4c8a47d94f03890e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  logicaPreguntas: {fileID: 2040694904}
-  dropdown: {fileID: 1735897401}
-  placeholderText: Seleccionar...
-  placeholderColor:
-    r: 0.5
-    g: 0.5
-    b: 0.5
-    a: 1
-  normalColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  hasSelectedOnce: 0
-  placeholderIndex: 0
 --- !u!114 &1735897401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13036,21 +12961,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e5c7b292570fff4c8a47d94f03890e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  logicaPreguntas: {fileID: 2040694904}
-  dropdown: {fileID: 1762527761}
-  placeholderText: Seleccionar...
-  placeholderColor:
-    r: 0.5
-    g: 0.5
-    b: 0.5
-    a: 1
-  normalColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  hasSelectedOnce: 0
-  placeholderIndex: 0
 --- !u!114 &1762527761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13551,21 +13461,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e5c7b292570fff4c8a47d94f03890e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  logicaPreguntas: {fileID: 2040694904}
-  dropdown: {fileID: 1835757331}
-  placeholderText: Seleccionar...
-  placeholderColor:
-    r: 0.5
-    g: 0.5
-    b: 0.5
-    a: 1
-  normalColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  hasSelectedOnce: 0
-  placeholderIndex: 0
 --- !u!114 &1835757331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13786,21 +13681,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e5c7b292570fff4c8a47d94f03890e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  logicaPreguntas: {fileID: 2040694904}
-  dropdown: {fileID: 1892031971}
-  placeholderText: Seleccionar...
-  placeholderColor:
-    r: 0.5
-    g: 0.5
-    b: 0.5
-    a: 1
-  normalColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  hasSelectedOnce: 0
-  placeholderIndex: 0
 --- !u!114 &1892031971
 MonoBehaviour:
   m_ObjectHideFlags: 0
