@@ -36,7 +36,7 @@ public class ButtonsCarpeta : MonoBehaviour
         {
             fotoPlace.sprite = imagenes[indice + 1];
             indice++;
-            if(indice == imagenes.Length)
+            if(indice == imagenes.Length-1)
             {
                 botonDerecho.SetActive(false);
             }
