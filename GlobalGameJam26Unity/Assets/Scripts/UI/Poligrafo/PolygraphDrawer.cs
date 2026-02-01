@@ -48,6 +48,7 @@ public class PolygraphDrawer : MonoBehaviour
     private List<Vector3> points = new List<Vector3>();
     private float timeSinceLastPoint = 0f;
     private bool nextPeakUp = true;
+    private bool continueDrawing = true;
 
     void Start()
     {
@@ -70,52 +71,56 @@ public class PolygraphDrawer : MonoBehaviour
 
     void Update()
     {
-        // Generar nuevos puntos
-        timeSinceLastPoint += Time.deltaTime;
-
-        if (timeSinceLastPoint >= 1f / drawSpeed)
+        if(continueDrawing)
         {
-            // Calcular altura aleatoria del pico
-            float peakHeight;
-            if (nextPeakUp)
+            // Generar nuevos puntos
+            timeSinceLastPoint += Time.deltaTime;
+
+            if (timeSinceLastPoint >= 1f / drawSpeed)
             {
-                // Pico hacia arriba: altura aleatoria entre min y max
-                peakHeight = Random.Range(minPeakUp, maxPeakUp);
+                // Calcular altura aleatoria del pico
+                float peakHeight;
+                if (nextPeakUp)
+                {
+                    // Pico hacia arriba: altura aleatoria entre min y max
+                    peakHeight = Random.Range(minPeakUp, maxPeakUp);
+                }
+                else
+                {
+                    // Pico hacia abajo: altura aleatoria entre min y max (negativo)
+                    peakHeight = -Random.Range(minPeakDown, maxPeakDown);
+                }
+
+                // Agregar nuevo punto SIEMPRE en startX (posición fija)
+                Vector3 newPoint = new Vector3(startX, yPosition + peakHeight, 0);
+                points.Add(newPoint);
+
+                // Alternar para el siguiente pico
+                nextPeakUp = !nextPeakUp;
+
+                timeSinceLastPoint = 0f;
             }
-            else
+
+            // Calcular velocidad de movimiento basada en peakSpacing y drawSpeed
+            float moveSpeed = peakSpacing * drawSpeed;
+
+            // Mover todos los puntos hacia la izquierda
+            for (int i = 0; i < points.Count; i++)
             {
-                // Pico hacia abajo: altura aleatoria entre min y max (negativo)
-                peakHeight = -Random.Range(minPeakDown, maxPeakDown);
+                points[i] += Vector3.left * moveSpeed * Time.deltaTime;
             }
 
-            // Agregar nuevo punto SIEMPRE en startX (posición fija)
-            Vector3 newPoint = new Vector3(startX, yPosition + peakHeight, 0);
-            points.Add(newPoint);
+            // Eliminar puntos que salieron de la pantalla (muy a la izquierda)
+            if (points.Count > maxPoints)
+            {
+                points.RemoveAt(0);
+            }
 
-            // Alternar para el siguiente pico
-            nextPeakUp = !nextPeakUp;
-
-            timeSinceLastPoint = 0f;
+            // Actualizar el LineRenderer
+            lineRenderer.positionCount = points.Count;
+            lineRenderer.SetPositions(points.ToArray());
         }
-
-        // Calcular velocidad de movimiento basada en peakSpacing y drawSpeed
-        float moveSpeed = peakSpacing * drawSpeed;
-
-        // Mover todos los puntos hacia la izquierda
-        for (int i = 0; i < points.Count; i++)
-        {
-            points[i] += Vector3.left * moveSpeed * Time.deltaTime;
-        }
-
-        // Eliminar puntos que salieron de la pantalla (muy a la izquierda)
-        if (points.Count > maxPoints)
-        {
-            points.RemoveAt(0);
-        }
-
-        // Actualizar el LineRenderer
-        lineRenderer.positionCount = points.Count;
-        lineRenderer.SetPositions(points.ToArray());
+        
     }
 
     public void StartLying()
@@ -149,5 +154,15 @@ public class PolygraphDrawer : MonoBehaviour
         maxPeakDown = maxPeakDownTruth;
         peakSpacing = peakSpacingTruth;
         drawSpeed = drawSpeedTruth;
+    }
+
+    public void StopDrawing()
+    {
+        continueDrawing = false;
+    }
+
+    public void StartDrawing()
+    {
+        continueDrawing = true;
     }
 }

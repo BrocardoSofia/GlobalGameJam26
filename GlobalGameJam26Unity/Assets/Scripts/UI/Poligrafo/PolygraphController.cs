@@ -45,6 +45,12 @@ public class PolygraphController : MonoBehaviour
                 Debug.Log("Verdad");
                 polygraph.StartTruth();
                 break;
+            case "stop":
+                polygraph.StopDrawing();
+                break;
+            case "start":
+                polygraph.StartDrawing();
+                break;
         }
     }
 }

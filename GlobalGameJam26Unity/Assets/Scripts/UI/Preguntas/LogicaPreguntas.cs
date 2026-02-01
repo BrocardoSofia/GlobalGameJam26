@@ -13,10 +13,12 @@ public class LogicaPreguntas : MonoBehaviour
     public Button pregunta3;
     public Button pregunta4;
 
+    public GameObject canvasFinal;
     public GameObject[] historial;
 
     private int ronda = 1;
     private List<Pregunta> preguntasdeRonda;
+    private bool pausado = false;
 
     public void Iniciar()
     {
@@ -76,14 +78,34 @@ public class LogicaPreguntas : MonoBehaviour
     {
         dopdownPregunta.interactable = false;
         polygraphController.SetPolygraphState(detector);
-        yield return new WaitForSeconds(4f);
-        dopdownPregunta.interactable = true;
-        polygraphController.SetPolygraphState("Inconcluso");
+
+        while (true)
+        {
+            while (pausado)
+            {
+                yield return null;
+            }
+            
+            yield return new WaitForSeconds(4f);
+            dopdownPregunta.interactable = true;
+            polygraphController.SetPolygraphState("Inconcluso");
+        }
+        
+    }
+
+    public void Pausar()
+    {
+        Time.timeScale = 0f;
+    }
+
+    public void Reanudar()
+    {
+        Time.timeScale = 1f;
     }
 
     public void NuevasPreguntas()
     {
-        if(ronda != 9)
+        if(ronda != 8)
         {
             ronda++;
             preguntasdeRonda = lectorPreguntas.ObtenerPreguntasPorRonda(ronda);
@@ -91,7 +113,8 @@ public class LogicaPreguntas : MonoBehaviour
         }
         else
         {
-            //habilitar botones finales
+            polygraphController.SetPolygraphState("stop");
+            canvasFinal.SetActive(true);
         }
         
     }
