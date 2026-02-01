@@ -11,7 +11,7 @@ public class LogicaPreguntas : MonoBehaviour
     public Button pregunta3;
     public Button pregunta4;
 
-    private int ronda = 0;
+    private int ronda = 1;
     private List<Pregunta> preguntasdeRonda;
 
     public void Iniciar()
@@ -45,6 +45,25 @@ public class LogicaPreguntas : MonoBehaviour
     {
         Debug.Log(indice);
         DisableButtons();
+        //se actualiza historial
+        //cambiar detector por 3 segundos en lo que sea
+        //volver a pulso normal
+    }
+
+    //se llama despues de cambiar una vez el desplegable
+    public void NuevasPreguntas()
+    {
+        if(ronda != 9)
+        {
+            ronda++;
+            preguntasdeRonda = lectorPreguntas.ObtenerPreguntasPorRonda(ronda);
+            UpdateButtons();
+        }
+        else
+        {
+            //habilitar botones finales
+        }
+        
     }
 
     private void DisableButtons()
