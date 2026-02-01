@@ -18,6 +18,9 @@ public class ButtonsCarpeta : MonoBehaviour
         polygraphController.SetPolygraphState("stop");
         canvasCarpeta.SetActive(true);
         logicaPreguntas.Pausar();
+        fotoPlace.sprite = imagenes[0];
+        botonIzquierdo.SetActive(false);
+        botonDerecho.SetActive(true);
     }
 
     public void CerrarCarpeta()
@@ -29,7 +32,7 @@ public class ButtonsCarpeta : MonoBehaviour
 
     public void PasarImagen(string hacia)
     {
-        if(hacia == "Derecha")
+        if(hacia == "Siguiente")
         {
             fotoPlace.sprite = imagenes[indice + 1];
             indice++;
