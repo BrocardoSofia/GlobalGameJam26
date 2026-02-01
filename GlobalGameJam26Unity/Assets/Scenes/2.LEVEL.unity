@@ -6212,8 +6212,25 @@ MonoBehaviour:
   - {fileID: 793001561}
   - {fileID: 1683280899}
   canvasFinal: {fileID: 1613755557}
-  culpableTxts: []
-  inocenteTxts: []
+  culpableTxts:
+  - "El caso se cerr\xF3 con una firma y un sello."
+  - La amante fue declarada culpable.
+  - "La esposa llor\xF3 frente a las c\xE1maras."
+  - "La ciudad sigui\xF3 su curso, como si nada hubiera pasado."
+  - "A veces pienso en esa mujer, sentada en una celda por un crimen que tal vez
+    no cometi\xF3."
+  - En este trabajo, la verdad no siempre gana.
+  - "A veces, solo gana la historia que suena m\xE1s convincente."
+  inocenteTxts:
+  - La amante fue declarada inocente.
+  - "El caso se archiv\xF3."
+  - "Nadie volvi\xF3 a hablar de la esposa."
+  - "Un a\xF1o despu\xE9s, su nombre apareci\xF3 en la secci\xF3n social del diario."
+  - "Se hab\xEDa vuelto a casar."
+  - "Tres meses m\xE1s tarde, su nuevo esposo fue encontrado muerto en su casa."
+  - "La polic\xEDa habl\xF3 de un accidente dom\xE9stico."
+  - "Ese d\xEDa aprend\xED que algunas personas no buscan justicia\u2026 solo buscan
+    testigos."
   textoCanvas: {fileID: 1196556094}
   duracionTransicion: 0.5
 --- !u!1 &697679441
