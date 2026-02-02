@@ -35,6 +35,7 @@ public class ButtonsCarpeta : MonoBehaviour
         canvasCarpeta.SetActive(true);
         logicaPreguntas.Pausar();
         fotoPlace.sprite = imagenes[0];
+        indice = 0;
         botonIzquierdo.SetActive(false);
         botonDerecho.SetActive(true);
     }
