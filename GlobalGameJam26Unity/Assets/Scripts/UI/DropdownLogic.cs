@@ -15,6 +15,7 @@ public class DropdownLogic : MonoBehaviour
             dropdown.options.RemoveAt(0);
             primeraVezSeleccionado = false;
             logicaPreguntas.NuevasPreguntas();
+            dropdown.value--;
         }
     }
 }
