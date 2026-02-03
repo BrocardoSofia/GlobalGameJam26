@@ -12,6 +12,7 @@ public class LogicaPreguntas : MonoBehaviour
     public Button pregunta2;
     public Button pregunta3;
     public Button pregunta4;
+    public TextMeshProUGUI textoRondas;
 
     public GameObject canvasFinal;
     public GameObject[] historial;
@@ -113,6 +114,7 @@ public class LogicaPreguntas : MonoBehaviour
         if(ronda != 9)
         {
             ronda++;
+            textoRondas.text = "RONDA "+ronda+"/9";
             preguntasdeRonda = lectorPreguntas.ObtenerPreguntasPorRonda(ronda);
             UpdateButtons();
         }
