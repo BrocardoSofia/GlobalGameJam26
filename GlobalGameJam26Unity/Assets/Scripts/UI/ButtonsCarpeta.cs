@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
+using Slider = UnityEngine.UI.Slider;
 
 public class ButtonsCarpeta : MonoBehaviour
 {
@@ -13,7 +14,13 @@ public class ButtonsCarpeta : MonoBehaviour
     public Sprite[] imagenes;
     private int indice = 0;
 
+    public GameObject carpetasPantalla;
+    public GameObject imagenesPantalla;
+
     public GameObject canvasInfoPoligrafo;
+    public Slider miSlider;
+
+    private float escala = 1;
 
     public void AbrirInfoPoligrafo()
     {
@@ -32,12 +39,10 @@ public class ButtonsCarpeta : MonoBehaviour
     public void AbrirCarpeta()
     {
         polygraphController.SetPolygraphState("stop");
+        carpetasPantalla.SetActive(true);
+        imagenesPantalla.SetActive(false);
         canvasCarpeta.SetActive(true);
         logicaPreguntas.Pausar();
-        fotoPlace.sprite = imagenes[0];
-        indice = 0;
-        botonIzquierdo.SetActive(false);
-        botonDerecho.SetActive(true);
     }
 
     public void CerrarCarpeta()
@@ -45,6 +50,22 @@ public class ButtonsCarpeta : MonoBehaviour
         polygraphController.SetPolygraphState("start");
         canvasCarpeta.SetActive(false);
         logicaPreguntas.Reanudar();
+    }
+
+    public void AbrirImagenes()
+    {
+        fotoPlace.sprite = imagenes[0];
+        indice = 0;
+        carpetasPantalla.SetActive(false);
+        imagenesPantalla.SetActive(true);
+        botonIzquierdo.SetActive(false);
+        botonDerecho.SetActive(true);
+    }
+
+    public void CerrarImagenes()
+    {
+        carpetasPantalla.SetActive(true);
+        imagenesPantalla.SetActive(false);
     }
 
     public void PasarImagen(string hacia)
@@ -69,5 +90,10 @@ public class ButtonsCarpeta : MonoBehaviour
             }
             botonDerecho.SetActive(true);
         }
+    }
+
+    public void TamañoImagen()
+    {
+        escala = miSlider.value;
     }
 }
