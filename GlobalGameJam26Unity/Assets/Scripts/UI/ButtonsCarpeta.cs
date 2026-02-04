@@ -21,7 +21,7 @@ public class ButtonsCarpeta : MonoBehaviour
     public Slider miSlider;
     public GameObject contenidoImagenes;
 
-    private float escala = 1f;
+    private float escala = 0.58f;
 
     public void AbrirInfoPoligrafo()
     {
