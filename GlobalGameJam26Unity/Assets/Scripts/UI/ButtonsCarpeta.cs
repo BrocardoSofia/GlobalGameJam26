@@ -19,8 +19,9 @@ public class ButtonsCarpeta : MonoBehaviour
 
     public GameObject canvasInfoPoligrafo;
     public Slider miSlider;
+    public GameObject contenidoImagenes;
 
-    private float escala = 1;
+    private float escala = 1f;
 
     public void AbrirInfoPoligrafo()
     {
@@ -60,6 +61,8 @@ public class ButtonsCarpeta : MonoBehaviour
         imagenesPantalla.SetActive(true);
         botonIzquierdo.SetActive(false);
         botonDerecho.SetActive(true);
+        contenidoImagenes.transform.localScale = new Vector3(escala, escala, escala);
+        miSlider.value = escala;
     }
 
     public void CerrarImagenes()
@@ -70,7 +73,9 @@ public class ButtonsCarpeta : MonoBehaviour
 
     public void PasarImagen(string hacia)
     {
-        if(hacia == "Siguiente")
+        contenidoImagenes.transform.localScale = new Vector3(escala, escala, escala);
+        miSlider.value = escala;
+        if (hacia == "Siguiente")
         {
             fotoPlace.sprite = imagenes[indice + 1];
             indice++;
@@ -94,6 +99,7 @@ public class ButtonsCarpeta : MonoBehaviour
 
     public void TamañoImagen()
     {
-        escala = miSlider.value;
+        float valor = miSlider.value;
+        contenidoImagenes.transform.localScale = new Vector3(valor, valor, valor);
     }
 }
