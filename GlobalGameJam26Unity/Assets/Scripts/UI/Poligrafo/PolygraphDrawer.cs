@@ -51,6 +51,7 @@ public class PolygraphDrawer : MonoBehaviour
     private bool continueDrawing = true;
 
     public ButtonsCarpeta botonesCarpetas;
+    public Tutorial tutorial;
 
     void Start()
     {
@@ -70,7 +71,8 @@ public class PolygraphDrawer : MonoBehaviour
         lineRenderer.sortingLayerName = "UI";
         lineRenderer.sortingOrder = 100;
 
-        botonesCarpetas.AbrirInfoPoligrafo();
+        //botonesCarpetas.AbrirInfoPoligrafo();
+        tutorial.IniciarTutorial();
     }
 
     void Update()

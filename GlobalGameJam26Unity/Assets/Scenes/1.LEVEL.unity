@@ -1314,15 +1314,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogoInicioJuego:
-  - Me dijeron que usted es discreto. Y eficiente.
+  - Me dijeron que usted es discreto... y eficiente.
   - "Mi esposo muri\xF3 hace dos semanas."
   - "La polic\xEDa dice que se quit\xF3 la vida."
   - "Qu\xE9 iron\xEDa, si fuera el caso \xBFno?"
   - "\xC9l se adoraba demasiado como para hacer algo as\xED."
-  - "Pero ten\xEDa\u2026 distracciones."
-  - Nadie quiere hablar de eso. Nadie quiere mirar donde corresponde.
-  - "Yo s\xED."
-  - "Quiero que averig\xFCe qu\xE9 pas\xF3 realmente."
+  - "El ten\xEDa\u2026 distracciones."
+  - Nadie quiere hablar de eso, nadie quiere mirar donde corresponde.
+  - A si, su apellido era Benson, al igual que el mio obviamente.
+  - Asi que escucho del caso, bueno, eso me ahorra un poco la explicacion.
+  - "\xBFDel seguro de vida?"
+  - Como se atreve a preguntarme de eso.
+  - "\xBFNo ve que soy una viuda en duelo?"
+  - "Le pago para que averig\xFCe qu\xE9 pas\xF3 realmente."
   - "Y que esa mujer\u2026 pague por lo que hizo."
   texto: {fileID: 1579608415}
 --- !u!4 &1293239573
@@ -1521,7 +1525,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Hola, detective\u2026"
+  m_text: "Buenos dias, detective\u2026"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1560,7 +1564,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 23
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0

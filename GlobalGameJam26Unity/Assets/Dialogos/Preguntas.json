@@ -2,7 +2,7 @@
   "preguntas": [
     {
       "ronda": 1,
-      "pregunta": "¿Mantuvo relaciones carnales con el señor Benson?",
+      "pregunta": "¿Mantuvo relaciones con el señor Benson?",
       "respuesta": "Si",
       "detector": "Verdad"
     },
@@ -122,7 +122,7 @@
     },
     {
       "ronda": 6,
-      "pregunta": "¿Tiene en su posesión personal un revólver Carbine 30?",
+      "pregunta": "¿Tiene en su posesión personal algun tipo de arma de fuego?",
       "respuesta": "Si",
       "detector": "Verdad"
     },
