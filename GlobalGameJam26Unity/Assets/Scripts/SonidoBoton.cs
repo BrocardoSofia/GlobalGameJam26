@@ -1,8 +1,9 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class SonidoBoton : MonoBehaviour, IPointerEnterHandler
+public class SonidoBoton : MonoBehaviour
 {
     [SerializeField] private AudioClip sonidoHover;
     [SerializeField] private AudioClip sonidoClick;
@@ -20,28 +21,33 @@ public class SonidoBoton : MonoBehaviour, IPointerEnterHandler
         {
             audioSource = gameObject.AddComponent<AudioSource>();
         }
-
-        audioSource.playOnAwake = false;
-        audioSource.loop = false;
-
-        // Añade el sonido al click del botón
-        boton = GetComponent<Button>();
-        if (boton != null && sonidoClick != null)
-        {
-            boton.onClick.AddListener(ReproducirSonidoClick);
-        }
     }
 
-    public void OnPointerEnter(PointerEventData eventData)
+    public void OnHover(Button boton)
     {
-        // Reproduce el sonido una sola vez al hacer hover
-        if (sonidoHover != null)
+        if (sonidoHover != null && boton.interactable)
         {
             audioSource.PlayOneShot(sonidoHover, volumen);
         }
     }
 
-    void ReproducirSonidoClick()
+    public void OnHover(TMP_Dropdown dropdown)
+    {
+        if (sonidoHover != null && dropdown.interactable)
+        {
+            audioSource.PlayOneShot(sonidoHover, volumen);
+        }
+    }
+
+    public void OnHover()
+    {
+        if (sonidoHover != null && this.enabled)
+        {
+            audioSource.PlayOneShot(sonidoHover, volumen);
+        }
+    }
+
+    public void OnClick()
     {
         if (sonidoClick != null)
         {

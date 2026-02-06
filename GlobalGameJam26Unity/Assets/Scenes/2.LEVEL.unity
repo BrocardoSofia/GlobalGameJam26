@@ -242,6 +242,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1899980853}
+        m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 2040694904}
         m_TargetAssemblyTypeName: LogicaPreguntas, Assembly-CSharp
         m_MethodName: ButtonClicked
@@ -319,12 +331,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 24805318}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99a4c78c5c2007b42ad5a7933027e864, type: 3}
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoHover: {fileID: 8300000, guid: 2059eb296cb2b4048a0bc8206359c83a, type: 3}
-  sonidoClick: {fileID: 8300000, guid: 01fe94b7c75ccbf45b5aab57273412af, type: 3}
-  volumen: 1
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1899980853}
+          m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+          m_MethodName: OnHover
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 24805320}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &42536980
 GameObject:
   m_ObjectHideFlags: 0
@@ -446,6 +472,18 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1899980853}
+        m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1822471992}
         m_TargetAssemblyTypeName: DropdownLogic, Assembly-CSharp
         m_MethodName: Seleccion
@@ -506,12 +544,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 42536980}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99a4c78c5c2007b42ad5a7933027e864, type: 3}
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoHover: {fileID: 8300000, guid: 2059eb296cb2b4048a0bc8206359c83a, type: 3}
-  sonidoClick: {fileID: 8300000, guid: 01fe94b7c75ccbf45b5aab57273412af, type: 3}
-  volumen: 1
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1899980853}
+          m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+          m_MethodName: OnHover
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 42536983}
+            m_ObjectArgumentAssemblyTypeName: TMPro.TMP_Dropdown, Unity.TextMeshPro
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &44341547
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,6 +648,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1899980853}
+        m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1159706203}
         m_TargetAssemblyTypeName: ButtonsCarpeta, Assembly-CSharp
         m_MethodName: PasarImagen
@@ -655,12 +719,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 44341547}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99a4c78c5c2007b42ad5a7933027e864, type: 3}
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoHover: {fileID: 8300000, guid: 2059eb296cb2b4048a0bc8206359c83a, type: 3}
-  sonidoClick: {fileID: 8300000, guid: 01fe94b7c75ccbf45b5aab57273412af, type: 3}
-  volumen: 1
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1899980853}
+          m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+          m_MethodName: OnHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &55767830
 GameObject:
   m_ObjectHideFlags: 0
@@ -2901,6 +2979,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1899980853}
+        m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1159706203}
         m_TargetAssemblyTypeName: ButtonsCarpeta, Assembly-CSharp
         m_MethodName: AbrirCarpeta
@@ -2960,12 +3050,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 193276723}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99a4c78c5c2007b42ad5a7933027e864, type: 3}
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoHover: {fileID: 8300000, guid: 2059eb296cb2b4048a0bc8206359c83a, type: 3}
-  sonidoClick: {fileID: 8300000, guid: 01fe94b7c75ccbf45b5aab57273412af, type: 3}
-  volumen: 1
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1899980853}
+          m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+          m_MethodName: OnHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &210480094
 GameObject:
   m_ObjectHideFlags: 0
@@ -5170,8 +5274,8 @@ GameObject:
   - component: {fileID: 368875394}
   - component: {fileID: 368875393}
   - component: {fileID: 368875392}
-  - component: {fileID: 368875395}
   - component: {fileID: 368875391}
+  - component: {fileID: 368875395}
   m_Layer: 5
   m_Name: Dropdown
   m_TagString: Untagged
@@ -5279,6 +5383,18 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1899980853}
+        m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 880892330}
         m_TargetAssemblyTypeName: DropdownLogic, Assembly-CSharp
         m_MethodName: Seleccion
@@ -5339,12 +5455,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 368875389}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99a4c78c5c2007b42ad5a7933027e864, type: 3}
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoHover: {fileID: 8300000, guid: 2059eb296cb2b4048a0bc8206359c83a, type: 3}
-  sonidoClick: {fileID: 8300000, guid: 01fe94b7c75ccbf45b5aab57273412af, type: 3}
-  volumen: 1
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1899980853}
+          m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+          m_MethodName: OnHover
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 368875392}
+            m_ObjectArgumentAssemblyTypeName: TMPro.TMP_Dropdown, Unity.TextMeshPro
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &369393749
 GameObject:
   m_ObjectHideFlags: 0
@@ -6449,6 +6579,7 @@ GameObject:
   - component: {fileID: 447026184}
   - component: {fileID: 447026183}
   - component: {fileID: 447026182}
+  - component: {fileID: 447026185}
   m_Layer: 5
   m_Name: Volver
   m_TagString: Untagged
@@ -6520,6 +6651,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1899980853}
+        m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1159706203}
         m_TargetAssemblyTypeName: ButtonsCarpeta, Assembly-CSharp
         m_MethodName: CerrarImagenes
@@ -6570,6 +6713,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 447026180}
   m_CullTransparentMesh: 1
+--- !u!114 &447026185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447026180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1899980853}
+          m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+          m_MethodName: OnHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &450269419
 GameObject:
   m_ObjectHideFlags: 0
@@ -7049,6 +7221,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1899980853}
+        m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1159706203}
         m_TargetAssemblyTypeName: ButtonsCarpeta, Assembly-CSharp
         m_MethodName: CerrarInfoPoligrafo
@@ -7108,12 +7292,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 488199829}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99a4c78c5c2007b42ad5a7933027e864, type: 3}
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoHover: {fileID: 8300000, guid: 2059eb296cb2b4048a0bc8206359c83a, type: 3}
-  sonidoClick: {fileID: 8300000, guid: 01fe94b7c75ccbf45b5aab57273412af, type: 3}
-  volumen: 1
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1899980853}
+          m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+          m_MethodName: OnHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &495308302
 GameObject:
   m_ObjectHideFlags: 0
@@ -7213,6 +7411,7 @@ GameObject:
   - component: {fileID: 507164875}
   - component: {fileID: 507164874}
   - component: {fileID: 507164873}
+  - component: {fileID: 507164876}
   m_Layer: 5
   m_Name: Carpeta
   m_TagString: Untagged
@@ -7284,6 +7483,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1899980853}
+        m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1159706203}
         m_TargetAssemblyTypeName: ButtonsCarpeta, Assembly-CSharp
         m_MethodName: AbrirImagenes
@@ -7334,6 +7545,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 507164871}
   m_CullTransparentMesh: 1
+--- !u!114 &507164876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507164871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1899980853}
+          m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+          m_MethodName: OnHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &513365810
 GameObject:
   m_ObjectHideFlags: 0
@@ -7421,6 +7661,18 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1899980853}
+        m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 2146141486}
         m_TargetAssemblyTypeName: DropdownLogic, Assembly-CSharp
         m_MethodName: Seleccion
@@ -7515,12 +7767,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 513365810}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99a4c78c5c2007b42ad5a7933027e864, type: 3}
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoHover: {fileID: 8300000, guid: 2059eb296cb2b4048a0bc8206359c83a, type: 3}
-  sonidoClick: {fileID: 8300000, guid: 01fe94b7c75ccbf45b5aab57273412af, type: 3}
-  volumen: 1
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1899980853}
+          m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+          m_MethodName: OnHover
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 513365811}
+            m_ObjectArgumentAssemblyTypeName: TMPro.TMP_Dropdown, Unity.TextMeshPro
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &520028515
 GameObject:
   m_ObjectHideFlags: 0
@@ -8715,7 +8981,7 @@ GameObject:
   - component: {fileID: 618378920}
   - component: {fileID: 618378919}
   - component: {fileID: 618378918}
-  - component: {fileID: 618378917}
+  - component: {fileID: 618378921}
   m_Layer: 0
   m_Name: Siguiente
   m_TagString: Untagged
@@ -8743,21 +9009,6 @@ RectTransform:
   m_AnchoredPosition: {x: 805.7886, y: -476.49548}
   m_SizeDelta: {x: 100.4003, y: 25.6036}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &618378917
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 618378915}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99a4c78c5c2007b42ad5a7933027e864, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sonidoHover: {fileID: 8300000, guid: 2059eb296cb2b4048a0bc8206359c83a, type: 3}
-  sonidoClick: {fileID: 8300000, guid: 01fe94b7c75ccbf45b5aab57273412af, type: 3}
-  volumen: 1
 --- !u!114 &618378918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8802,6 +9053,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1899980853}
+        m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1218069468}
         m_TargetAssemblyTypeName: Tutorial, Assembly-CSharp
         m_MethodName: PasarSigTutorial
@@ -8852,6 +9115,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 618378915}
   m_CullTransparentMesh: 1
+--- !u!114 &618378921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618378915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1899980853}
+          m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+          m_MethodName: OnHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &624981609
 GameObject:
   m_ObjectHideFlags: 0
@@ -9575,6 +9867,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1899980853}
+        m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 2040694904}
         m_TargetAssemblyTypeName: LogicaPreguntas, Assembly-CSharp
         m_MethodName: ButtonClicked
@@ -9673,12 +9977,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 697990459}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99a4c78c5c2007b42ad5a7933027e864, type: 3}
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoHover: {fileID: 8300000, guid: 2059eb296cb2b4048a0bc8206359c83a, type: 3}
-  sonidoClick: {fileID: 8300000, guid: 01fe94b7c75ccbf45b5aab57273412af, type: 3}
-  volumen: 1
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1899980853}
+          m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+          m_MethodName: OnHover
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 697990460}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &699182389
 GameObject:
   m_ObjectHideFlags: 0
@@ -10471,6 +10789,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1899980853}
+        m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 2040694904}
         m_TargetAssemblyTypeName: LogicaPreguntas, Assembly-CSharp
         m_MethodName: ButtonClicked
@@ -10569,12 +10899,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 782507068}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99a4c78c5c2007b42ad5a7933027e864, type: 3}
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoHover: {fileID: 8300000, guid: 2059eb296cb2b4048a0bc8206359c83a, type: 3}
-  sonidoClick: {fileID: 8300000, guid: 01fe94b7c75ccbf45b5aab57273412af, type: 3}
-  volumen: 1
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1899980853}
+          m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+          m_MethodName: OnHover
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 782507069}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &802026307
 GameObject:
   m_ObjectHideFlags: 0
@@ -12431,6 +12775,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1899980853}
+        m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 2040694904}
         m_TargetAssemblyTypeName: LogicaPreguntas, Assembly-CSharp
         m_MethodName: ButtonClicked
@@ -12508,12 +12864,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 922705587}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99a4c78c5c2007b42ad5a7933027e864, type: 3}
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoHover: {fileID: 8300000, guid: 2059eb296cb2b4048a0bc8206359c83a, type: 3}
-  sonidoClick: {fileID: 8300000, guid: 01fe94b7c75ccbf45b5aab57273412af, type: 3}
-  volumen: 1
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1899980853}
+          m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+          m_MethodName: OnHover
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 922705589}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &925273543
 GameObject:
   m_ObjectHideFlags: 0
@@ -16109,6 +16479,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1899980853}
+        m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1159706203}
         m_TargetAssemblyTypeName: ButtonsCarpeta, Assembly-CSharp
         m_MethodName: AbrirInfoPoligrafo
@@ -16168,12 +16550,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1171653302}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99a4c78c5c2007b42ad5a7933027e864, type: 3}
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoHover: {fileID: 8300000, guid: 2059eb296cb2b4048a0bc8206359c83a, type: 3}
-  sonidoClick: {fileID: 8300000, guid: 01fe94b7c75ccbf45b5aab57273412af, type: 3}
-  volumen: 1
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1899980853}
+          m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+          m_MethodName: OnHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1171679771
 GameObject:
   m_ObjectHideFlags: 0
@@ -19338,6 +19734,18 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1899980853}
+        m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 442730068}
         m_TargetAssemblyTypeName: DropdownLogic, Assembly-CSharp
         m_MethodName: Seleccion
@@ -19410,12 +19818,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1422879440}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99a4c78c5c2007b42ad5a7933027e864, type: 3}
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoHover: {fileID: 8300000, guid: 2059eb296cb2b4048a0bc8206359c83a, type: 3}
-  sonidoClick: {fileID: 8300000, guid: 01fe94b7c75ccbf45b5aab57273412af, type: 3}
-  volumen: 1
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1899980853}
+          m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+          m_MethodName: OnHover
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1422879442}
+            m_ObjectArgumentAssemblyTypeName: TMPro.TMP_Dropdown, Unity.TextMeshPro
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1427901062
 GameObject:
   m_ObjectHideFlags: 0
@@ -19826,6 +20248,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1899980853}
+        m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1159706203}
         m_TargetAssemblyTypeName: ButtonsCarpeta, Assembly-CSharp
         m_MethodName: PasarImagen
@@ -19885,12 +20319,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1456984078}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99a4c78c5c2007b42ad5a7933027e864, type: 3}
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoHover: {fileID: 8300000, guid: 2059eb296cb2b4048a0bc8206359c83a, type: 3}
-  sonidoClick: {fileID: 8300000, guid: 01fe94b7c75ccbf45b5aab57273412af, type: 3}
-  volumen: 1
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1899980853}
+          m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+          m_MethodName: OnHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1466087767
 GameObject:
   m_ObjectHideFlags: 0
@@ -20259,6 +20707,18 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1899980853}
+        m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1987403525}
         m_TargetAssemblyTypeName: DropdownLogic, Assembly-CSharp
         m_MethodName: Seleccion
@@ -20319,12 +20779,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1475906806}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99a4c78c5c2007b42ad5a7933027e864, type: 3}
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoHover: {fileID: 8300000, guid: 2059eb296cb2b4048a0bc8206359c83a, type: 3}
-  sonidoClick: {fileID: 8300000, guid: 01fe94b7c75ccbf45b5aab57273412af, type: 3}
-  volumen: 1
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1899980853}
+          m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+          m_MethodName: OnHover
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1475906809}
+            m_ObjectArgumentAssemblyTypeName: TMPro.TMP_Dropdown, Unity.TextMeshPro
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1477162647
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22051,6 +22525,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1899980853}
+        m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1159706203}
         m_TargetAssemblyTypeName: ButtonsCarpeta, Assembly-CSharp
         m_MethodName: CerrarCarpeta
@@ -22110,12 +22596,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1617194724}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99a4c78c5c2007b42ad5a7933027e864, type: 3}
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoHover: {fileID: 8300000, guid: 2059eb296cb2b4048a0bc8206359c83a, type: 3}
-  sonidoClick: {fileID: 8300000, guid: 01fe94b7c75ccbf45b5aab57273412af, type: 3}
-  volumen: 1
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1899980853}
+          m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+          m_MethodName: OnHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1622513879
 GameObject:
   m_ObjectHideFlags: 0
@@ -24283,6 +24783,18 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1899980853}
+        m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 532521752}
         m_TargetAssemblyTypeName: DropdownLogic, Assembly-CSharp
         m_MethodName: Seleccion
@@ -24343,12 +24855,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1735897398}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99a4c78c5c2007b42ad5a7933027e864, type: 3}
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoHover: {fileID: 8300000, guid: 2059eb296cb2b4048a0bc8206359c83a, type: 3}
-  sonidoClick: {fileID: 8300000, guid: 01fe94b7c75ccbf45b5aab57273412af, type: 3}
-  volumen: 1
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1899980853}
+          m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+          m_MethodName: OnHover
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1735897401}
+            m_ObjectArgumentAssemblyTypeName: TMPro.TMP_Dropdown, Unity.TextMeshPro
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1748288897
 GameObject:
   m_ObjectHideFlags: 0
@@ -24510,6 +25036,18 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1899980853}
+        m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1271885994}
         m_TargetAssemblyTypeName: DropdownLogic, Assembly-CSharp
         m_MethodName: Seleccion
@@ -24570,12 +25108,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1762527758}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99a4c78c5c2007b42ad5a7933027e864, type: 3}
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoHover: {fileID: 8300000, guid: 2059eb296cb2b4048a0bc8206359c83a, type: 3}
-  sonidoClick: {fileID: 8300000, guid: 01fe94b7c75ccbf45b5aab57273412af, type: 3}
-  volumen: 1
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1899980853}
+          m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+          m_MethodName: OnHover
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1762527761}
+            m_ObjectArgumentAssemblyTypeName: TMPro.TMP_Dropdown, Unity.TextMeshPro
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1765498272
 GameObject:
   m_ObjectHideFlags: 0
@@ -25037,6 +25589,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1899980853}
+        m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 676981379}
         m_TargetAssemblyTypeName: FinalOfLevel, Assembly-CSharp
         m_MethodName: IniciarFinal
@@ -25096,12 +25660,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1786079680}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99a4c78c5c2007b42ad5a7933027e864, type: 3}
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoHover: {fileID: 8300000, guid: 2059eb296cb2b4048a0bc8206359c83a, type: 3}
-  sonidoClick: {fileID: 8300000, guid: 01fe94b7c75ccbf45b5aab57273412af, type: 3}
-  volumen: 1
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1899980853}
+          m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+          m_MethodName: OnHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1792984302
 GameObject:
   m_ObjectHideFlags: 0
@@ -25856,6 +26434,18 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1899980853}
+        m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1722636170}
         m_TargetAssemblyTypeName: DropdownLogic, Assembly-CSharp
         m_MethodName: Seleccion
@@ -25916,12 +26506,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1835757328}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99a4c78c5c2007b42ad5a7933027e864, type: 3}
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoHover: {fileID: 8300000, guid: 2059eb296cb2b4048a0bc8206359c83a, type: 3}
-  sonidoClick: {fileID: 8300000, guid: 01fe94b7c75ccbf45b5aab57273412af, type: 3}
-  volumen: 1
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1899980853}
+          m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+          m_MethodName: OnHover
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1835757331}
+            m_ObjectArgumentAssemblyTypeName: TMPro.TMP_Dropdown, Unity.TextMeshPro
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1845510916
 GameObject:
   m_ObjectHideFlags: 0
@@ -26006,6 +26610,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1899980853}
+        m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 676981379}
         m_TargetAssemblyTypeName: FinalOfLevel, Assembly-CSharp
         m_MethodName: IniciarFinal
@@ -26065,12 +26681,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1845510916}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99a4c78c5c2007b42ad5a7933027e864, type: 3}
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoHover: {fileID: 8300000, guid: 2059eb296cb2b4048a0bc8206359c83a, type: 3}
-  sonidoClick: {fileID: 8300000, guid: 01fe94b7c75ccbf45b5aab57273412af, type: 3}
-  volumen: 1
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1899980853}
+          m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+          m_MethodName: OnHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1862091619
 GameObject:
   m_ObjectHideFlags: 0
@@ -26711,6 +27341,18 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1899980853}
+        m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 699182391}
         m_TargetAssemblyTypeName: DropdownLogic, Assembly-CSharp
         m_MethodName: Seleccion
@@ -26771,12 +27413,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1892031968}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99a4c78c5c2007b42ad5a7933027e864, type: 3}
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoHover: {fileID: 8300000, guid: 2059eb296cb2b4048a0bc8206359c83a, type: 3}
-  sonidoClick: {fileID: 8300000, guid: 01fe94b7c75ccbf45b5aab57273412af, type: 3}
-  volumen: 1
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1899980853}
+          m_TargetAssemblyTypeName: SonidoBoton, Assembly-CSharp
+          m_MethodName: OnHover
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1892031971}
+            m_ObjectArgumentAssemblyTypeName: TMPro.TMP_Dropdown, Unity.TextMeshPro
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1899080000
 GameObject:
   m_ObjectHideFlags: 0
@@ -26913,6 +27569,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1899080000}
   m_CullTransparentMesh: 1
+--- !u!1 &1899980852
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1899980854}
+  - component: {fileID: 1899980853}
+  m_Layer: 0
+  m_Name: BotonesSonido
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1899980853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899980852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99a4c78c5c2007b42ad5a7933027e864, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sonidoHover: {fileID: 8300000, guid: 2059eb296cb2b4048a0bc8206359c83a, type: 3}
+  sonidoClick: {fileID: 8300000, guid: 01fe94b7c75ccbf45b5aab57273412af, type: 3}
+  volumen: 0.5
+--- !u!4 &1899980854
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899980852}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 996.84106, y: 384.57465, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1902253742
 GameObject:
   m_ObjectHideFlags: 0
@@ -30214,3 +30917,4 @@ SceneRoots:
   - {fileID: 1159706204}
   - {fileID: 676981378}
   - {fileID: 1346506738}
+  - {fileID: 1899980854}
