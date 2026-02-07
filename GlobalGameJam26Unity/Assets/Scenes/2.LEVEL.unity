@@ -3287,7 +3287,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -55, y: -3.7324}
+  m_AnchoredPosition: {x: -16, y: -3.7324}
   m_SizeDelta: {x: 2243.2107, y: 1340.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &217620927
@@ -3310,9 +3310,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a703c582b1bb8f1488338685a554e2fe, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3dc7ed38ab738154191b3c9b56331962, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -16292,14 +16292,15 @@ MonoBehaviour:
   botonDerecho: {fileID: 44341547}
   fotoPlace: {fileID: 217620927}
   imagenes:
-  - {fileID: 21300000, guid: 039e19e0ab9dae34eab13d23646669d8, type: 3}
-  - {fileID: 21300000, guid: 2c2307fe24efee54b96afc3c39282aec, type: 3}
-  - {fileID: 21300000, guid: b9218a0d4d1a1a54c8a8d9e8a3c58cea, type: 3}
-  - {fileID: 21300000, guid: a703c582b1bb8f1488338685a554e2fe, type: 3}
-  - {fileID: 21300000, guid: 6b45b5053e95ff941beb132c1292186c, type: 3}
-  - {fileID: 21300000, guid: 7500bc9a41fcef34fa9569c4020b37a3, type: 3}
-  - {fileID: 21300000, guid: 062673c3616ca214a9e9ec37d19fc2d8, type: 3}
-  - {fileID: 21300000, guid: d928aab715b812c49b051096622512d5, type: 3}
+  - {fileID: 21300000, guid: 3dc7ed38ab738154191b3c9b56331962, type: 3}
+  - {fileID: 21300000, guid: 54c155d3625f15b4ebc5dc8e39bc5f4a, type: 3}
+  - {fileID: 21300000, guid: 1bbc38c8514c03749b816c18dfcf02a8, type: 3}
+  - {fileID: 21300000, guid: 79ea6d05ead6fdf40bbb149071570b7e, type: 3}
+  - {fileID: 21300000, guid: 39be901c20f53434ba1fb164f524e02c, type: 3}
+  - {fileID: 21300000, guid: f16cbcd33944c9e4fa5cd68477208775, type: 3}
+  - {fileID: 21300000, guid: 42a4877f90a820e4b9ca8b73e445570e, type: 3}
+  - {fileID: 21300000, guid: 2b3cd70264b956d43807e9aa9ef887f9, type: 3}
+  - {fileID: 21300000, guid: 48cae6174237e314982a016b96f01f44, type: 3}
   carpetasPantalla: {fileID: 1175514146}
   imagenesPantalla: {fileID: 311951021}
   canvasInfoPoligrafo: {fileID: 975186321}
