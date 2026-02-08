@@ -3287,8 +3287,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16, y: -3.7324}
-  m_SizeDelta: {x: 2243.2107, y: 1340.7}
+  m_AnchoredPosition: {x: -6.5491, y: 3.215}
+  m_SizeDelta: {x: 2282.5, y: 1363.6908}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &217620927
 MonoBehaviour:
@@ -16301,6 +16301,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 42a4877f90a820e4b9ca8b73e445570e, type: 3}
   - {fileID: 21300000, guid: 2b3cd70264b956d43807e9aa9ef887f9, type: 3}
   - {fileID: 21300000, guid: 48cae6174237e314982a016b96f01f44, type: 3}
+  - {fileID: 21300000, guid: 7e8a5952f7882e14aab6e9576cb003ac, type: 3}
+  - {fileID: 21300000, guid: 3c23c96661518644cb6337b0dd347ad4, type: 3}
+  - {fileID: 21300000, guid: 02668806f619b4e4a88c03c935b5376f, type: 3}
   carpetasPantalla: {fileID: 1175514146}
   imagenesPantalla: {fileID: 311951021}
   canvasInfoPoligrafo: {fileID: 975186321}
