@@ -56,8 +56,8 @@
     },
     {
       "ronda": 3,
-      "pregunta": "¿Su marido sabe de la relación que mantenía con el señor Benson?",
-      "respuesta": "No",
+      "pregunta": "¿Trabajó para el señor Benson?",
+      "respuesta": "Si",
       "detector": "Verdad"
     },
     {
